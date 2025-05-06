@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pricing</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<div class = "header">
+      <h1>Simple Pricing!</h1>
+      <p>The Most advanced customer support is here!</p>
+  	</div>
+  
+  	<div class = "price-cards">
+      <div class = "card" onclick="selectedCard(this)">
+        <div class = "card-head">
+          BASIC
+  		</div>
+        <div class = "price">
+          $4 <span class = "months">/month</span>
+  		</div>
+        <div class = "detail">
+          10 Projects<br>
+		  10 Pages<br>
+ 		  100 Mb Disk Spaces
+          </div>
+		<button class ="button" onclick="buyNow(event)">Buy Now</button> 
+  	  </div>
+          
+      <div class = "card" onclick="selectedCard(this)">
+        <div class = "card-head">
+          Standard <span class = "label-save">Save 15%</span>
+  		</div>
+        <div class = "price">
+          $8 <span class = "months">/month</span>
+  		</div>
+        <div class = "detail">
+          20 Projects<br>
+		  20 Pages<br>
+ 		  200 Mb Disk Spaces
+          </div>
+		<button class ="button" onclick="buyNow(event)">Buy Now</button> 
+  	  </div>
+          
+      <div class = "card" onclick="selectedCard(this)">
+        <div class = "card-head">
+          Advanced
+  		</div>
+        <div class = "price">
+          $12 <span class = "months">/month</span>
+  		</div>
+        <div class = "detail">
+          40 Projects<br>
+		  40 Pages<br>
+ 		  500 Mb Disk Spaces
+          </div>
+		<button class ="button" onclick="buyNow(event)">Buy Now</button> 
+  	  </div>
+  	</div>
+  
+  	<div class = "faq">
+      <h2>Frequently Asked Question</h2>
+		<div class = "faq-container">
+          	<div class = "faq-collumn">
+              	<div class = "faq-question">
+              	How does trial work?
+      			    </div>
+              	<div class = "faq-answer">
+              	Lorep ipsum aasasa
+      			    </div>
+      		  </div>
+          	<div class = "faq-collumn">
+              <div class = "faq-question">
+              	Can i cancel anytime?
+      			  </div>
+              	<div class = "faq-answer">
+              	Lorep ipsum aasasa
+      			  </div>
+      		  </div>
+      	</div >
+  	</div>
+  <script>
+  function buyNow(event) {
+      event.stopPropagation();
+      alert("Success");
+  }
+
+  function selectedCard(card) {
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach (c => c.classList.remove('selected'));
+      card.classList.add('selected');
+  }      
+  </script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
