@@ -14,7 +14,8 @@ body {
     justify-content:center;
   	padding:40px 20px;
   	gap: 30px;
-  	text-align:center
+  	text-align:center;
+	background: linear-gradient(to bottom, #2f3e94 50%, white 50%);
 }
 
 .card {
@@ -41,7 +42,11 @@ body {
   	color:white;
   	padding:15px 10px;
     font-weight:bold;
-	font-size:18px;  
+	font-size:18px;display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 8px;
+  
 }
 
 .label-save {
@@ -83,7 +88,7 @@ body {
 }
 
 .faq {
-	background:#ededed;
+	background:white;
   	padding:60px 20px;
   	text-align:center;
 }
